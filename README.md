@@ -1,6 +1,6 @@
 # Reg_KP
 Registrierkassen Prüftool
-nach österreichischen [Registrierkassensicherheitsverordnung (RKSV)](https://www.bmf.gv.at/top-themen/Registrierkassen.html#heading_Folder__Informationen_zur_Registrierkassen__und_Belegerteilungspflicht) 
+nach österreichischen [Registrierkassensicherheitsverordnung (RKSV)](https://github.com/a-sit-plus/at-registrierkassen-mustercode/releases/download/1.2-DOK/2016-09-05-Detailfragen-RKSV-V1.2.pdf) 
 
 
 # Muster-Code
@@ -19,11 +19,14 @@ WICHTIG: Beachten Sie, dass wir für Freeware keine Garantie und keinen Support 
 
 # Erstellen von Start Beleg
 
+siehe ts.bat in Repository
+
 wir brauchen zwei steuerungs Dateien 
 * .\kpar.txt  mit kassen-ID AES-Key und. Cert_Ser_Nr
 * .\bel2dep.txt  mit Beleg-Nummer, Beleg-Art, und die einzelne Beträge in Cent
 
-die durch aufruf von REGKP.EXE signiert werden, dabei werden die Dateien (klastbel.txt,deplog.txt) erstell
+die durch aufruf von REGKP.EXE signiert werden, dabei werden die Dateien (klastbel.txt,deplog.txt) erstellt
+
 
 
 mit REGKP.EXE -xj  werden die json Dateien exportiert (dep-export.json, crypto.json) 
