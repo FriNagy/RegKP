@@ -37,7 +37,7 @@ mit "REGKP -xc" kann das Zertifikat auf .\cert.hex ausgeben um zB. bei https://c
  
 cmdline Version von RegKP, 
 
-damit mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze)
+so wird auch mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze)
 
 signiert Belege zB: mit 
 
@@ -47,5 +47,6 @@ einfache Test von Reader und Signatur mit:
 
 atKassa \~?\~ 
 
-erstellt und signiert einen Startbeleg, exportiert die json Dateien für das Prüftool 
+erstellt und signiert einen Startbeleg, exportiert die json Dateien für das Prüftool
+Kassendaten in .\kpar.txt
 
