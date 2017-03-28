@@ -47,7 +47,7 @@ Kassendaten in .\kpar.txt
 
 Ausgabe .\lastsig.txt damit auch QR Code OK zB:
 
-"_R1-AT1_RegK-IBK-D9C_INF11-030-17_2017-03-29T00:29:30_1,20_0,00_0,00_0,00_0,00_/yRlUXg32kc=_1e45320a_9sOtiZ4T7ms="
+"_R1-AT1_RegK-IBK-D9C_INF11-030-17_2017-03-29T00:29:30_1,20_0,00_0,00_0,00_0,00_/yRlUXg..."
 "G-bBhkqt0p7vkd7jmW-RmMLIH2Deg_qPPlzrCOuDdgRlsDfR-0kmsZfrzQuDmewa_YkmRJI8RQTnPL6h6EI9oA"
 "G+bBhkqt0p7vkd7jmW+RmMLIH2Deg/qPPlzrCOuDdgRlsDfR+0kmsZfrzQuDmewa/YkmRJI8RQTnPL6h6EI9oA=="
 "48"
