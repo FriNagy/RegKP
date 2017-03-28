@@ -33,20 +33,27 @@ mit REGKP.EXE -xj  werden die json Dateien exportiert (dep-export.json, crypto.j
 
 mit "REGKP -xc" kann das Zertifikat auf .\cert.hex ausgeben um zB. bei https://certlogik.com/decoder/  zu testen.
 
-# atKassa.exe
+#  REGKP.exe NEU
  
-cmdline Version von RegKP, 
+cmdline Version von RegKP,  eingabe via cmdline ausgabe nach stdout 
+(so wird auch mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze))
 
-so wird auch mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze)
+signiert Belege zB: mit "RegKP ~INF11-/#03X-17~STA~120" 
+(Feld Trennzeichen ~, Belegnummer 3 stellige Hex mit führenden Nullen)
 
-signiert Belege zB: mit 
-
-atKassa \~Bon_Nr:_17\~STA\~1230\~0\~111" 
-
-einfache Test von Reader und Signatur mit:
-
-atKassa \~?\~ 
-
+einfache Test von Reader und Signatur mit: "RegKP -tsb" 
 erstellt und signiert einen Startbeleg, exportiert die json Dateien für das Prüftool
 Kassendaten in .\kpar.txt
+
+Ausgabe .\lastsig.txt damit auch QR Code OK zB:
+
+"_R1-AT1_RegK-IBK-D9C_INF11-030-17_2017-03-29T00:29:30_1,20_0,00_0,00_0,00_0,00_/yRlUXg32kc=_1e45320a_9sOtiZ4T7ms="
+"G-bBhkqt0p7vkd7jmW-RmMLIH2Deg_qPPlzrCOuDdgRlsDfR-0kmsZfrzQuDmewa_YkmRJI8RQTnPL6h6EI9oA"
+"G+bBhkqt0p7vkd7jmW+RmMLIH2Deg/qPPlzrCOuDdgRlsDfR+0kmsZfrzQuDmewa/YkmRJI8RQTnPL6h6EI9oA=="
+"48"
+"INF11-030-17"
+
+in Zeile 3 Signatur Base64 URL codiert, also für QR Code (Zeile1 + "_" + Zeile3) zu drucken
+
+
 
