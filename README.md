@@ -38,8 +38,8 @@ mit "REGKP -xc" kann das Zertifikat auf .\cert.hex ausgeben um zB. bei https://c
 cmdline Version von RegKP,  eingabe via cmdline ausgabe nach stdout 
 (so wird auch mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze))
 
-signiert Belege zB: mit "RegKP ~INF11-/#03X-17~STA~120" 
-(Feld Trennzeichen ~, Belegnummer 3 stellige Hex mit führenden Nullen)
+signiert Belege zB: mit "RegKP \~INF11-/#03X-17\~STA\~120" 
+(Feld Trennzeichen \~, Belegnummer 3 stellige Hex mit führenden Nullen)
 
 einfache Test von Reader und Signatur mit: "RegKP -tsb" 
 erstellt und signiert einen Startbeleg, exportiert die json Dateien für das Prüftool
