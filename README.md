@@ -57,6 +57,28 @@ einige neue Parameter dazu:
 -?r Reader Info 
 -?c Certificate Info ( in cert.as1 )
 
+# am 04/04/2017
+
+RegKP mit ONLine-Konten Unterstützung,
+Achtung! curl.exe muss im gleichen Ordner wie RegKP.exe vorhanden sein!
+
+einfach in KPAR.TXT in Zeile-4 und 5 die Zugangsdaten eintragen,
+fangt Zeile-4 mit 'u' an, wird auf online signieren umgeschaltet
+zB: 
+>DEMO-CASHBox
+
+>QRtiiya3hYh/Uz44Bv3x8ETl1nrH6nCdErn69g5/lU=
+
+>26e174a
+
+>u36794969
+
+>v1wxyz
+
+
+
+
+
 geplant: * automail (Statusbericht) an cert.aussteller
          * Quartals Daten-Backup via Mail (an safe@atsafe.at)
          * Meldungen via WebService
