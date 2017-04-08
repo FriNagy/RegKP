@@ -54,32 +54,44 @@ Ausgabe .\lastsig.txt damit auch QR Code OK zB:
 in Zeile 3 Signatur Base64 codiert, also für QR Code (Zeile1 + "_" + Zeile3) zu drucken
 
 einige neue Parameter dazu:
--?r Reader Info 
--?c Certificate Info ( in cert.as1 )
+-ri Reader Info 
+-ci Certificate Info ( in cert.as1 )
 
 # am 04/04/2017
 
-RegKP mit ONLine-Konten Unterstützung,
+RegKP mit ONLine-Konten Unterstützung, (verwendet curl.exe)
 Achtung! curl.exe muss im gleichen Ordner wie RegKP.exe vorhanden sein!
 
 einfach in KPAR.TXT in Zeile-4 und 5 die Zugangsdaten eintragen,
 fangt Zeile-4 mit 'u' an, wird auf online signieren umgeschaltet
-zB: 
->DEMO-CASHBox
 
->QRtiiya3hYh/Uz44Bv3x8ETl1nrH6nCdErn69g5/lU=
+```Beispiel .\KPAR.TXT
+DEMO-CASHBox
+QRtiiya3hYh/Uz44Bv3x8ETl1nrH6nCdErn69g5/lU=
+26e174a
+u36794969
+v1wxyz
+```
 
->26e174a
+# am 07/04/2017
 
->u36794969
+RegKP.7z als gesamtprojekt (inkl. curl.exe und blat.dll)
+erweitert mit Mail support, einige Beispiele
+```
+RegKP -? 
+RegKP -si 
+RegKP -ou u123456789 -si 
+```
+oder sende Statusbericht von RK-online Konto an test@mail.com 
+```
+RegKP -ou u123456789 -mto test@mail.com
+```
+oder sende Statusbericht von ATrust-Karte an Zertifikate inhaber 
+```
+RegKP -mc
+```
+ 
 
->v1wxyz
-
-
-
-
-
-geplant: * automail (Statusbericht) an cert.aussteller
-         * Quartals Daten-Backup via Mail (an safe@atsafe.at)
+geplant: * Quartals Daten-Backup via Mail (an safe@atsafe.at)
          * Meldungen via WebService
          u.s.w.
