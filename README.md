@@ -36,8 +36,11 @@ mit "REGKP -xc" kann das Zertifikat auf .\cert.hex ausgeben um zB. bei https://c
 cmdline Version von RegKP,  eingabe via cmdline ausgabe nach stdout 
 (so wird auch mit PSExec auf remote PC startbar (zB. bei 1 Reader, mehrere Kassenplätze))
 
-signiert Belege zB: mit "RegKP \~INF11-/#03X-17\~STA\~120" 
-(Feld Trennzeichen \~, Belegnummer 3 stellige Hex mit führenden Nullen)
+signiert Belege zB: mit "RegKP \~INF11-030-17\~STA\~120" 
+
+(Feld Trennzeichen \~, Belegnummer, Beleg-Art, Beträge in Cent)
+
+Beleg-Art: erlaubt sind "START;STA;STO,NUL;TRA" ( \~\~ = STA )  
 
 einfache Test von Reader und Signatur mit: "RegKP -tsb" 
 erstellt und signiert einen Startbeleg, exportiert die json Dateien für das Prüftool
@@ -90,7 +93,26 @@ oder sende Statusbericht von ATrust-Karte an Zertifikate inhaber
 ```
 RegKP -mc
 ```
- 
+
+# am 12/04/2017
+
+RegKP_all.7z erweitert mit drucken, (durch f2p.exe),
+mit dem Parameter -sf setzen wir wie f2p.exe gestartet wird 
+
+```
+RegKP -sf sbon.f2p -tsb
+
+RegKP -sf "sbon.f2p -or -x" -tsb 
+```
+oder signieren und drucken: 
+```
+RegKP -sf "bon.f2p -od" ~BON##~~240
+```
+
+f2p.exe unsere Flex to PDF Konverter in f2p Ordner (mit Demo Banner, kann aber pro UID freigeschaltet werden)
+recht komplex aber sehr flexibel, die zwei Beispiele sbon und bon:
+
+
 
 geplant: * Quartals Daten-Backup via Mail (an safe@atsafe.at)
          * Meldungen via WebService
