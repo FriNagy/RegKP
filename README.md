@@ -112,7 +112,7 @@ RegKP -sf "bon.f2p -od" ~BON##~~240
 f2p.exe unsere Flex to PDF Konverter in f2p Ordner (mit Demo Banner, kann aber pro UID freigeschaltet werden)
 recht komplex aber sehr flexibel, die zwei Beispiele sbon und bon:
 
-
+![Start Beleg](Static/sbel2.png "Start-Beleg")
 
 geplant: * Quartals Daten-Backup via Mail (an safe@atsafe.at)
          * Meldungen via WebService
