@@ -1,6 +1,17 @@
-f2p ist unsere Flex to PDF konverter,
-damit wir diverse Dokumente ( .PDF, .DOC, -HTML) , 
+f2p.exe unsere Flex to PDF Konverter in f2p Ordner 
+
+mit f2p können wir diverse Dokumente ( .PDF, .DOC, -HTML) , 
 gesteuert durch einfache Text Datei erstellen 
-bzw drucken o. archivieren können
+bzw drucken o. archivieren 
+
+recht komplex aber sehr flexibel, 
+geschrieben mit der hilfe von:
+http://idealsoftware.com/de/pdf-library/report-engine.html
+
+(VPE ist Kostenpflichtig, so erscheinen die Beispiele mit Demo Banner, 
+kann aber pro UID freigeschaltet werden)
 
 
+dabei einige Beispiele:
+
+![Start Beleg](Static/sbel2.PNG "Start-Beleg")
