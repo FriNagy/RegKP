@@ -1,6 +1,6 @@
 Wir haben das RegKP.exe mit Unterstützung f. Web Services erweitert
 Dabei nutzen wir curl.exe, es ist frei, hat sich recht gut bewährt 
-(REGK verwendet seit einem Monat curl.exe zu online signieren) und 
+(RegKP verwendet seit einem Monat curl.exe zu online signieren) und 
 ein super cmdline tool mit haufen Parameter!
 
 Es ist leicht übertrieben als Script zu nennen, 
@@ -9,5 +9,5 @@ Wir können Steuerungs-Dateien erstellen, curl mit div. Parameter starten
 danach den Ergebnis auswerten, von dem abhängig nun wieder neue Dateien
 erstellen, curl nochmals starten, Ergebnisse auswerten usw.
 
-die Beispiele sind mit Finzanonline getestet
+die Beispiele sind mit Finanzonline getestet
 https://www.bmf.gv.at/egovernment/fon/fuer-softwarehersteller/softwarehersteller-funktionen.html#Webservices
