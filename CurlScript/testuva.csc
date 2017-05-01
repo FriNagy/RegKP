@@ -10,7 +10,7 @@
       <ses:loginRequest>
          <ses:tid>61779540b308</ses:tid>
          <ses:benid>FNWS2017</ses:benid>
-         <ses:pin>WSBEN2017</ses:pin>
+         <ses:pin>..........</ses:pin>
          <ses:herstellerid>ATU31537101</ses:herstellerid>
       </ses:loginRequest>
    </soapenv:Body>
@@ -50,16 +50,7 @@
 
 >>> 
 
-
-
-
-
- UID OK!
- (%%v<ns5:name>) 
- (%%v<ns5:adrz1>) 
- (%%v<ns5:adrz2>) 
-
-
+-OK-
 
 
 >> logout.xml 
