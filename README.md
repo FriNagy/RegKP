@@ -108,6 +108,7 @@ oder signieren und drucken:
 ```
 RegKP -sf "bon.f2p -od" ~BON##~~240
 ```
+![Imgur](https://github.com/FriNagy/RegKP/blob/master/Static/BONf2p.PNG)
 
 geplant: * Quartals Daten-Backup via Mail (an safe@atsafe.at)
          * Meldungen via WebService
